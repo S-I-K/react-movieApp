@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    /* background: tomato; */
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    width: 60%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+ul {
+    width: 60%;
+}
+
+.TodoList {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #ccc;
+    color: black;
+    position: relative;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background: #d0d0d0;
+}
+
+.delete {
+    border: none;
+    border-radius: 4px;
+    padding: 2px 6px;
+    background: #222;
+    color: #fff;
+    position: absolute;
+    right: 4%;
+}
+
+/* coin list */
+.loading {
+    width: 300px;
+    height: 160px;
+    background: #444;
+    border: 2px solid #d7ff44;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
