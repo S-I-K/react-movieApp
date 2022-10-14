@@ -9,7 +9,7 @@ export default function Home(){
     const [movies, setMovies] = useState([]);
     const getMovies= async()=>{
         const json = await (
-            await fetch('https://yts.mx/api/v2/list_movies.json?minimum_rating=8.5&sort_by=year')
+            await fetch('https://yts.mx/api/v2/list_movies.json?minimum_rating=9.2&sort_by=year')
         ).json();
         setMovies(json.data.movies);
         setLoading(false);
@@ -24,7 +24,7 @@ export default function Home(){
         <div className={styles.main}>
             <div className={styles.container}>
                 {loading ? <div className={styles.loading}>Loading ...</div> : 
-                <div> { movies.map((movie) => (
+                <div className={styles.movieList}> { movies.map((movie) => (
 
                     <Movie key={movie.id} movie={movie} />
 

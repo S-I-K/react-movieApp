@@ -4,11 +4,15 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .main {
     width: 100vw;
     min-height: 100vh;
     height: 100%;
-    background: #222;
+    background: #324863;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -18,81 +22,36 @@
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     height: auto;
-    padding: 3rem 0;
-    background: rgba(0, 0, 0, .4);
+    padding: 10rem 0;
+    /* background: rgba(0, 0, 0, .4); */
+    /* background: #5e7391; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-form {
-    /* background: tomato; */
-    width: 100%;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.todo {
-    width: 60%;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    margin-bottom: 10px;
-}
-
-ul {
-    width: 60%;
-}
-
-.TodoList {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    background: #ccc;
-    color: black;
-    position: relative;
-}
-
-.btn {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    background: #d0d0d0;
-}
-
-.delete {
-    border: none;
-    border-radius: 4px;
-    padding: 2px 6px;
-    background: #222;
-    color: #fff;
-    position: absolute;
-    right: 4%;
 }
 
 /* coin list */
 .loading {
     width: 300px;
-    height: 160px;
-    background: #444;
-    border: 2px solid #d7ff44;
-    border-radius: 10px;
+    height: 300px;
+    background: rgba(255, 255, 255, .4);
+    border: 2px solid #fff;
+    border-radius: 50%;
     font-size: 1.4rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
+    opacity: .6;
+}
+
+.movieList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
